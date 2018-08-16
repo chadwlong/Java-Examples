@@ -18,11 +18,11 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		this.setSize(800,800);
 		this.setLayout(new GridLayout(10,10));
 		grid = new Boardbutton[10][10];				//Create grid as 10 x 10 of Boardbutton class object
-		bomb = new boolean[10][10];					//Mines referred to as bombs
+		bomb = new boolean[10][10];				//Mines referred to as bombs
 		counter = new int[10][10];
 		isRevealed = new boolean[10][10];
 		identifier = new String[10][10];
-		buildGrid();								//Method to place bombs and calculate number counts
+		buildGrid();						//Method to place bombs and calculate number counts
 	}
 	
 	//Declaration of private variables to be used in methods
@@ -169,7 +169,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		}
 		catch(ArrayIndexOutOfBoundsException e){}
 		
-		return adjCounter;								//Return total count as identifier string value
+		return adjCounter;					//Return total count as identifier string value
 	}
 	
 	//Main method to create instance of MineSweeper
