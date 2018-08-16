@@ -99,7 +99,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		//"B" identifier indicates a bomb button
 		try
 		{	
-			if(grid[x][y + 1].identifier == "B")		//Top center adjacent button
+			if(grid[x][y + 1].identifier == "B")		//Right adjacent button
 			{
 				adjCounter++;
 			}
@@ -108,7 +108,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		
 		try
 		{	
-			if(grid[x][y - 1].identifier == "B")		//Bottom center adjacent button
+			if(grid[x][y - 1].identifier == "B")		//Left adjacent button
 			{
 				adjCounter++;
 			}
@@ -126,7 +126,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 
 		try
 		{	
-			if(grid[x + 1][y].identifier == "B")		//Right adjacent button
+			if(grid[x + 1][y].identifier == "B")		//Top adjacent button
 			{
 				adjCounter++;
 			}
@@ -135,7 +135,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		
 		try
 		{	
-			if(grid[x + 1][y - 1].identifier == "B")	//Bottom right adjacent button
+			if(grid[x + 1][y - 1].identifier == "B")	//Top left adjacent button
 			{
 				adjCounter++;
 			}
@@ -144,7 +144,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		
 		try
 		{	
-			if(grid[x - 1][y + 1].identifier == "B")	//Top left adjacent button
+			if(grid[x - 1][y + 1].identifier == "B")	//Bottom right adjacent button
 			{
 				adjCounter++;
 			}
@@ -153,7 +153,7 @@ public class MineSweeper extends JPanel implements ActionListener, MouseListener
 		
 		try
 		{	
-			if(grid[x - 1][y].identifier == "B")		//Left adjacent button
+			if(grid[x - 1][y].identifier == "B")		//Bottom adjacent button
 			{
 				adjCounter++;
 			}
