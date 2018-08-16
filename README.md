@@ -19,8 +19,10 @@ MNO.
 
 All letters are in alphabetical order with the "." character in the bottom right corner. An input file to my code would be a txt file with exactly 4 lines of 4 characters each that are from the puzzle seen above. As in, the characters from A to O and the "." character make up the allowable characters. The solution printed to console consists of the coordinates of which characters are swapped and in what order along with the total number of moves. 
 
-For example, A puzzle with the "O" and "." swapped would result in this printout:
+For example, an input puzzle with the "O" and "." swapped would result in this printout for the solution:
+```
 (3,2) -> (3,3)
 1 moves
+```
 
-Feel free to create your own txt input files as well as modifying the code to use larger puzzles.
+Feel free to create your own txt input files as well as modifying the code to solve larger puzzles.
