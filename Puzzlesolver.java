@@ -163,7 +163,7 @@ public class Puzzlesolver
 	//Variables needed for Solver method
 	static boolean win = false;		//State for indicating a solution
 	static int iteration = 1;		//Value to track the depth level
-	static String moves_List = "";	//Solution string of moves to print to console
+	static String moves_List = "";		//Solution string of moves to print to console
 	
 	public static void Solver(char puzzle[][], int row, int column, int depth)
 	{
@@ -180,7 +180,7 @@ public class Puzzlesolver
 			{
 				direction = 1;
 				puzzle = swap(puzzle, row, column, direction);
-				Solver(puzzle, row - 1, column, depth - 1);			//Recursive call 
+				Solver(puzzle, row - 1, column, depth - 1);		//Recursive call 
 				puzzle = swap(puzzle, row, column, direction);
 				
 				//Check to see if the puzzle is solved
@@ -198,7 +198,7 @@ public class Puzzlesolver
 			{
 				direction = 2;
 				puzzle = swap(puzzle, row, column, direction);
-				Solver(puzzle, row, column + 1, depth - 1);			//Recursive call
+				Solver(puzzle, row, column + 1, depth - 1);		//Recursive call
 				puzzle = swap(puzzle, row, column, direction);
 				
 				//Check to see if the puzzle is solved
@@ -216,7 +216,7 @@ public class Puzzlesolver
 			{
 				direction = 3;
 				puzzle = swap(puzzle, row, column, direction);
-				Solver(puzzle, row, column - 1, depth - 1);			//Recursive call
+				Solver(puzzle, row, column - 1, depth - 1);		//Recursive call
 				puzzle = swap(puzzle, row, column, direction);
 				
 				//Check to see if the puzzle is solved
@@ -233,7 +233,7 @@ public class Puzzlesolver
 			{
 				direction = 4;
 				puzzle = swap(puzzle, row, column, direction);
-				Solver(puzzle, row + 1, column, depth - 1);			//Recursive call
+				Solver(puzzle, row + 1, column, depth - 1);		//Recursive call
 				puzzle = swap(puzzle, row, column, direction);
 				
 				//Check to see if the puzzle is solved
@@ -262,7 +262,7 @@ public class Puzzlesolver
 		//If solution not found at current depth, increase the depth and restart the Solver algorithm
 		if(depth == iteration)
 		{
-			iteration++;								//Increase number of moves, or depth, tracker
+			iteration++;					//Increase number of moves, or depth, tracker
 			Solver(puzzle, row, column, depth + 1);		//Solver call at increased depth
 		}
 	}
